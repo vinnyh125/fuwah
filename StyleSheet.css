@@ -1,0 +1,21 @@
+#titlecard {
+    text-align: center;
+}
+
+.navbar {
+    overflow: hidden;
+    text-align: center;
+}
+
+.navbar a {
+    padding: 14px;
+    text-align: center;
+}
+
+#location {
+    text-align: center;
+}
+
+.botInfoBar {
+    display: flex;
+}

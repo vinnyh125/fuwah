@@ -2,6 +2,10 @@
     text-align: center;
 }
 
+body {
+    margin: 0px;
+}
+
 .navbar {
     overflow: hidden;
     text-align: center;
@@ -10,6 +14,7 @@
     width: 100%; /* Full width */
     background-color: white;
     z-index: 1;
+    /* border: 1px solid #333; */
 }
 
 .navbar a {
@@ -51,7 +56,7 @@
     justify-content: space-around;
     text-align: center;
     margin: auto;
-    margin-left: 50px;
+    margin-left: 40px;
 }
 
 .main {

@@ -62,3 +62,8 @@ body {
 .main {
     margin-top: 50px;
 }
+
+#availability {
+    margin: 0px;
+}
+

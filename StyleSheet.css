@@ -5,13 +5,41 @@
 .navbar {
     overflow: hidden;
     text-align: center;
+    position: fixed; /* Sets nav bar pos to be fixed */
+    top: 0; /* Positions the nav bar to be at top of page*/
+    width: 100%; /* Full width */
+    background-color: white;
+    z-index: 1;
 }
 
 .navbar a {
-    padding: 14px;
+    display: inline-block;
     text-align: center;
     text-decoration: none;
-    margin: 20px;
+    margin-inline: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    position: relative;
+    color: black;
+    padding: 0 10px;
+}
+
+.navbar a:after {
+    content: "";
+    position: absolute;
+    background-color: blue;
+    height: 3px;
+    width: 0%;
+    left: 0px;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.navbar a:hover:after {
+    width: 100%;
 }
 
 #location {
@@ -20,7 +48,12 @@
 
 .botInfoBar {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     text-align: center;
+    margin: auto;
     margin-left: 50px;
+}
+
+.main {
+    margin-top: 50px;
 }

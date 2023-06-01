@@ -10,6 +10,8 @@
 .navbar a {
     padding: 14px;
     text-align: center;
+    text-decoration: none;
+    margin: 20px;
 }
 
 #location {

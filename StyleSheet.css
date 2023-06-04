@@ -26,8 +26,8 @@ body {
     text-align: center;
     text-decoration: none;
     margin-inline: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     padding-top: 10px;
     font-size: 18px;
     letter-spacing: 0.5px;
@@ -39,8 +39,8 @@ body {
 .navbar a:after {
     content: "";
     position: absolute;
-    background-color: blue;
-    height: 3px;
+    background-color: black;
+    height: 1px;
     width: 0%;
     left: 0px;
     bottom: -5px;
@@ -48,6 +48,10 @@ body {
 }
 
 .navbar a:hover:after {
+    width: 100%;
+}
+
+.navbar a.underline:after {
     width: 100%;
 }
 
@@ -70,4 +74,3 @@ body {
 #availability {
     margin: 0px;
 }
-

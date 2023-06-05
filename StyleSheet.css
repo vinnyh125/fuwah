@@ -52,7 +52,7 @@ body {
     width: 100%;
 }
 
-.navbar a.underline:after, #diffA.underline:after {
+.navbar a:not(.dropbtn):not(.dropdown-content a).underline:after, #diffA.underline:after {
     width: 100%;
 }
 

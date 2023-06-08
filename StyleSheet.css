@@ -3,6 +3,13 @@
     padding-top: 3px;
 }
 
+#fuwah-home {
+    text-decoration: none;
+    text-align: center;
+    font-size: 24px;
+    color: black;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -19,6 +26,10 @@ body {
     width: 100%; /* Full width */
     background-color: white;
     z-index: 1;
+}
+
+#navbar-tab-holder {
+    margin-left: 12px; /* placeholder centering value for now */
 }
 
 .navbar a {

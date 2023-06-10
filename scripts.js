@@ -35,7 +35,7 @@ $(document).ready(function() {
         "Wednesday", "Thursday",
         "Friday", "Saturday", 
         "Sunday"
-    ]
+    ];
 
     y = date.getFullYear();
     m = monthList[date.getMonth()];
@@ -43,71 +43,31 @@ $(document).ready(function() {
     dayOfWeek = dayOfWeekList[date.getDay()];
     hourOfDay = date.getHours();
     minuteOfDay = date.getMinutes();
-    restOpen = document.getElementById('hour-minute').innerHTML = "We are currently: OPEN"
-    restClosed = document.getElementById('hour-minute').innerHTML = "We are currently: CLOSED"
+    currMinutes = hourOfDay * 60 + minuteOfDay;
 
     document.getElementById('date').innerHTML = m.toUpperCase() + " " + d + ", " + y;
     if (dayOfWeek in dayOfWeekList.splice(4,3)) {
-        if (hourOfDay < 22) {
-            if (hourOfDay >= 10) {
-                if (hourOfDay == 10 && minuteOfDay >= 30) {
-                    restOpen;
-                }
-                else if (hourOfDay == 10 && minuteOfDay < 30) {
-                    restClosed;
-                }
-                else {
-                    restOpen;
-                } 
-            }
-            else {
-                restOpen;
-            }
+        if (630 <= currMinutes <= 1320) {
+            document.getElementById('hour-minute').innerHTML = "We are currently: OPEN";
         }
         else {
-            restClosed;
+            document.getElementById('hour-minute').innerHTML = "We are currently: CLOSED";
         }
     }
     else if (dayOfWeek == "Friday" || dayOfWeek == "Saturday") {
-        if (hourOfDay < 23) {
-            if (hourOfDay >= 10) {
-                if (hourOfDay == 10 && minuteOfDay >= 30) {
-                    restOpen;
-                }
-                else if (hourOfDay == 10 && minuteOfDay < 30) {
-                    restClosed;
-                }
-                else {
-                    restOpen;
-                } 
-            } 
-            else {
-                restOpen;
-            } 
+        if (630 <= currMinutes <= 1380) {
+            document.getElementById('hour-minute').innerHTML = "We are currently: OPEN";
         }
         else {
-            restClosed;
+            document.getElementById('hour-minute').innerHTML = "We are currently: CLOSED";
         }
     }
     else {
-        if (hourOfDay < 22) {
-            if (hourOfDay >= 11) {
-                if (hourOfDay == 11 && minuteOfDay >= 30) {
-                    restOpen;
-                }
-                else if (hourOfDay == 11 && minuteOfDay < 30) {
-                    restClosed;
-                }
-                else {
-                    restOpen;
-                }
-            }
-            else {
-                restOpen;
-            }
+        if (690 <= currMinutes <= 1320) {
+            document.getElementById('hour-minute').innerHTML = "We are currently: OPEN";
         }
         else {
-            restClosed;
+            document.getElementById('hour-minute').innerHTML = "We are currently: CLOSED";
         }
     }
     

@@ -20,4 +20,18 @@ $(document).ready(function() {
             toggle = 0;
         }
     });
+
+    n = new Date();
+    const monthList = [
+        "January", "February", 
+        "March", "April", 
+        "May", "June", 
+        "July", "August", 
+        "September", "October", 
+        "November", "December"
+    ];
+    y = n.getFullYear();
+    m = monthList[n.getMonth()];
+    d = n.getDate();
+    document.getElementById('date').innerHTML = m.toUpperCase() + " " + d + ", " + y;
 });

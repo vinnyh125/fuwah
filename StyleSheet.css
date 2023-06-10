@@ -6,7 +6,7 @@
 #fuwah-home {
     text-decoration: none;
     text-align: center;
-    font-size: 24px;
+    font-size: 96px;
     color: black;
 }
 
@@ -16,6 +16,18 @@ html {
 
 body {
     margin: 0px;
+}
+
+#date {
+    text-align: center;
+    font-size: 36px;
+    letter-spacing: 0.5px;
+}
+
+#disclaimer {
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 0.5px;
 }
 
 .navbar {

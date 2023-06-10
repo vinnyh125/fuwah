@@ -22,11 +22,31 @@ body {
     text-align: center;
     font-size: 36px;
     letter-spacing: 0.5px;
+    margin-bottom: 1%;
+}
+
+#hour-minute {
+    margin-top: 0px;
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 0.5px;
 }
 
 #disclaimer {
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+}
+
+.popular-items h3{
+    text-align: center;
+    font-size: 36px;
+    letter-spacing: 0.5px;
+}
+
+.popular-items p {
+    text-align: center;
+    font-size: 22px;
     letter-spacing: 0.5px;
 }
 
@@ -79,9 +99,9 @@ body {
     width: 100%;
 }
 
-#location {
+/* #location {
     text-align: center;
-}
+} */
 
 .botInfoBar {
     display: flex;
@@ -130,3 +150,4 @@ body {
     background-color: gray;
     color: white;
 }
+

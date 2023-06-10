@@ -21,7 +21,7 @@ $(document).ready(function() {
         }
     });
 
-    n = new Date();
+    date = new Date();
     const monthList = [
         "January", "February", 
         "March", "April", 
@@ -37,12 +37,12 @@ $(document).ready(function() {
         "Sunday"
     ]
 
-    y = n.getFullYear();
-    m = monthList[n.getMonth()];
-    d = n.getDate();
-    dayOfWeek = dayOfWeekList[n.getDay()];
-    hourOfDay = n.getHours();
-    minuteOfDay = n.getMinutes();
+    y = date.getFullYear();
+    m = monthList[date.getMonth()];
+    d = date.getDate();
+    dayOfWeek = dayOfWeekList[date.getDay()];
+    hourOfDay = date.getHours();
+    minuteOfDay = date.getMinutes();
     restOpen = document.getElementById('hour-minute').innerHTML = "We are currently: OPEN"
     restClosed = document.getElementById('hour-minute').innerHTML = "We are currently: CLOSED"
 
@@ -110,4 +110,36 @@ $(document).ready(function() {
             restClosed;
         }
     }
+    
+    let slideIndex = 1;
+    showSlides(slideIndex);
 });
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}

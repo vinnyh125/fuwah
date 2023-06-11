@@ -116,11 +116,19 @@ body {
 
 .botInfoBar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     text-align: center;
     margin: auto;
-    margin-left: 40px;
-    margin-bottom: 4%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#address {
+    margin-left: 20%;
+}
+
+#bizHours {
+    margin-right: 20%;
 }
 
 .main {
@@ -164,10 +172,6 @@ body {
     0% { opacity: 0; }
     50% { opacity: 0; }
     100% { opacity: 1; }
-}
-
-#availability {
-    margin: 0px;
 }
 
 .dropdown {
@@ -269,4 +273,14 @@ body {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+#phone-number, #restaurant-location {
+    color: black;
+}
+
+#copyright-marker {
+    margin-left: 8px;
+    color: black;
+    text-align: center;
 }

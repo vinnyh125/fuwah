@@ -47,7 +47,7 @@ $(document).ready(function() {
 
     document.getElementById('date').innerHTML = m.toUpperCase() + " " + d + ", " + y;
     if (dayOfWeek in dayOfWeekList.splice(4,3)) {
-        if (630 <= currMinutes <= 1320) {
+        if (currMinutes >= 630 && currMinutes <= 1320) {
             document.getElementById('hour-minute').innerHTML = "We are currently: OPEN";
         }
         else {
@@ -55,7 +55,7 @@ $(document).ready(function() {
         }
     }
     else if (dayOfWeek == "Friday" || dayOfWeek == "Saturday") {
-        if (630 <= currMinutes <= 1380) {
+        if (currMinutes >= 630 && currMinutes <= 1380) {
             document.getElementById('hour-minute').innerHTML = "We are currently: OPEN";
         }
         else {
@@ -63,7 +63,7 @@ $(document).ready(function() {
         }
     }
     else {
-        if (690 <= currMinutes <= 1320) {
+        if (currMinutes >= 690 && currMinutes <= 1320) {
             document.getElementById('hour-minute').innerHTML = "We are currently: OPEN";
         }
         else {

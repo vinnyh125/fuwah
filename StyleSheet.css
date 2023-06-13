@@ -113,6 +113,11 @@ body {
     margin-right: 20%;
     margin-top: 5%;
     line-height: 2.0;
+    scroll-margin-top: 52px; /* no support for IE */
+}
+
+#menu {
+    scroll-margin-top: 52px; /* no support for IE */
 }
 
 .botInfoBar {

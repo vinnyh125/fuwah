@@ -1,3 +1,2 @@
-# Fu-Wah
-Fun project for the summer.
-Website for Fu-Wah Chinese Restaurant
+# Fu-Wah Chinese Restaurant Website
+Website and general hub for Fu-Wah Chinese Restaurant. 

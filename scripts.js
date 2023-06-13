@@ -73,6 +73,20 @@ $(document).ready(function() {
     
     let slideIndex = 1;
     showSlides(slideIndex);
+
+    var menuToggle = 0;
+    
+    $('.icon').click(function() {
+        if (menuToggle == 0) {
+            menuToggle = 1;
+            $('.hidden').hide().removeClass('hidden');
+            $('#mobile-tabs').slideDown();
+        }
+        else {
+            $('#mobile-tabs').slideUp();
+            menuToggle = 0;
+        }
+    });
 });
 
 let slideIndex = 1;

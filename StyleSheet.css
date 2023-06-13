@@ -60,10 +60,56 @@ body {
     width: 100%; /* Full width */
     background-color: white;
     z-index: 1;
+    min-width: 768px;
+}
+
+.navbar-mobile {
+    display: none;
+    overflow: hidden;
+    position: fixed; /* Sets nav bar pos to be fixed */
+    top: 0; /* Positions the nav bar to be at top of page*/
+    width: 100%; /* Full width */
+    background-color: white;
+    z-index: 1;
+    max-width: 768px;
+    height: 52px;
 }
 
 #navbar-tab-holder {
     margin-left: 0px; /* placeholder centering value for now */
+}
+
+#logo {
+    text-decoration: none;
+    float: left;
+    color: black;
+    font-size: 39px;
+    padding-left: 5px;
+}
+
+#navbar-mobile-tab-holder a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: black;
+    font-size: 39px;
+    padding-right: 6px;
+}
+
+#mobile-tabs {
+    display: none;
+    text-align: center;
+    margin-top: 52px;
+    margin-bottom: -50px;
+}
+
+#mobile-tabs a {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    display: block;
 }
 
 .navbar a {
@@ -214,7 +260,12 @@ body {
     color: white;
 }
 
-* {box-sizing:border-box}
+#mobile-tabs .dropdown-content a:hover {
+    background-color: gray;
+    color: white;
+}
+
+* {box-sizing: border-box}
 
 /* Slideshow container */
 .slideshow-container {
@@ -289,4 +340,30 @@ body {
 #copyright-marker {
     color: black;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    #address {
+        margin-left: 10%;
+    }
+    
+    #bizHours {
+        margin-right: 10%;
+    }
+
+    .botInfoBar {
+        width: 100%;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .navbar-mobile {
+        display: block;
+    }
+
+    #navbar-mobile-tab-holder {
+        display: block;
+    }
 }

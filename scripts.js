@@ -79,7 +79,7 @@ $(document).ready(function() {
     $('.icon').click(function() {
         if (menuToggle == 0) {
             menuToggle = 1;
-            $('#mobile-tabs').hide().removeClass('hidden');
+            $('#mobile-tabs').removeClass('hidden');
             $('#mobile-tabs').slideDown();
         }
         else {

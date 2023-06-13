@@ -112,6 +112,15 @@ body {
     display: block;
 }
 
+#mobile-tabs .dropdown {
+    position: relative;
+}
+
+#mobile-tabs .dropdown-content {
+    position: absolute;
+    z-index: 0;
+}
+
 .navbar a {
     display: inline-block;
     text-align: center;

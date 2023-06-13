@@ -106,7 +106,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: -20%;
     z-index: 1;
     background-color: white;
     line-height: 2.5;

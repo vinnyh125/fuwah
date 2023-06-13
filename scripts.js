@@ -79,13 +79,38 @@ $(document).ready(function() {
     $('.icon').click(function() {
         if (menuToggle == 0) {
             menuToggle = 1;
-            $('.hidden').hide().removeClass('hidden');
+            $('#mobile-tabs').hide().removeClass('hidden');
             $('#mobile-tabs').slideDown();
         }
         else {
             $('#mobile-tabs').slideUp();
             menuToggle = 0;
         }
+    });
+
+    $('#mobile-menu').click(function() {
+        $('#mobile-tabs').slideUp();
+        menuToggle = 0;
+    });
+
+    $('#mobile-about').click(function() {
+        $('#mobile-tabs').slideUp();
+        menuToggle = 0;
+    });
+
+    $('#mobile-location').click(function() {
+        $('#mobile-tabs').slideUp();
+        menuToggle = 0;
+    });
+
+    $('#mobile-hours').click(function() {
+        $('#mobile-tabs').slideUp();
+        menuToggle = 0;
+    });
+
+    $('#logo').click(function() {
+        $('#mobile-tabs').slideUp();
+        menuToggle = 0;
     });
 });
 

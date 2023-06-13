@@ -104,6 +104,10 @@ body {
     margin-bottom: -50px;
 }
 
+.hidden {
+    display: none;
+}
+
 #mobile-tabs a {
     color: black;
     text-align: center;

@@ -44,6 +44,8 @@ $(document).ready(function() {
     hourOfDay = date.getHours();
     minuteOfDay = date.getMinutes();
     currMinutes = hourOfDay * 60 + minuteOfDay;
+    console.log(date);
+    console.log(currMinutes);
 
     document.getElementById('date').innerHTML = m.toUpperCase() + " " + d + ", " + y;
     if (dayOfWeek in dayOfWeekList.splice(4,3)) {

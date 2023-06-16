@@ -40,12 +40,10 @@ $(document).ready(function() {
     y = date.getFullYear();
     m = monthList[date.getMonth()];
     d = date.getDate();
-    dayOfWeek = dayOfWeekList[date.getDay()-1];
+    dayOfWeek = dayOfWeekList[date.getDay()-1]; //date.getDay() returns day of week starting at 1 so needed to -1 to get correct index
     hourOfDay = date.getHours();
     minuteOfDay = date.getMinutes();
     currMinutes = hourOfDay * 60 + minuteOfDay;
-    console.log(date.getDay(), dayOfWeek, hourOfDay, minuteOfDay, currMinutes);
-    
 
     document.getElementById('date').innerHTML = m.toUpperCase() + " " + d + ", " + y;
     if (dayOfWeek in dayOfWeekList.splice(0,4)) {

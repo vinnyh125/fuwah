@@ -40,7 +40,7 @@ $(document).ready(function() {
     y = date.getFullYear();
     m = monthList[date.getMonth()];
     d = date.getDate();
-    dayOfWeek = dayOfWeekList[date.getDay()];
+    dayOfWeek = dayOfWeekList[date.getDay()-1];
     hourOfDay = date.getHours();
     minuteOfDay = date.getMinutes();
     currMinutes = hourOfDay * 60 + minuteOfDay;

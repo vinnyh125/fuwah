@@ -21,7 +21,7 @@ $(document).ready(function() {
         }
     });
 
-    date = new Date().toLocaleString('en-US', {timeZone: 'America/New_York'});
+    date = new Date();
     const monthList = [
         "January", "February", 
         "March", "April", 

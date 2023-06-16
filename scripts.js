@@ -44,6 +44,7 @@ $(document).ready(function() {
     hourOfDay = date.getHours();
     minuteOfDay = date.getMinutes();
     currMinutes = hourOfDay * 60 + minuteOfDay;
+    console.log(dayOfWeek, hourOfDay, minuteOfDay, currMinutes);
     
 
     document.getElementById('date').innerHTML = m.toUpperCase() + " " + d + ", " + y;

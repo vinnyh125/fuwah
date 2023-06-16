@@ -48,6 +48,7 @@ $(document).ready(function() {
     console.log(currMinutes);
     console.log(dayOfWeekList.splice(0,4));
     console.log(dayOfWeek in dayOfWeekList.splice(0,4));
+    console.log(dayOfWeek);
     
 
     document.getElementById('date').innerHTML = m.toUpperCase() + " " + d + ", " + y;

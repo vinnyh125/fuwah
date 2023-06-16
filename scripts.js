@@ -44,15 +44,10 @@ $(document).ready(function() {
     hourOfDay = date.getHours();
     minuteOfDay = date.getMinutes();
     currMinutes = hourOfDay * 60 + minuteOfDay;
-    console.log(date);
-    console.log(currMinutes);
-    console.log(dayOfWeekList.splice(0,4));
-    console.log(dayOfWeek in dayOfWeekList.splice(0,4));
-    console.log(dayOfWeek);
     
 
     document.getElementById('date').innerHTML = m.toUpperCase() + " " + d + ", " + y;
-    if (dayOfWeek in dayOfWeekList.splice(4,3)) {
+    if (dayOfWeek in dayOfWeekList.splice(0,4)) {
         if (currMinutes >= 630 && currMinutes <= 1320) {
             document.getElementById('hour-minute').innerHTML = "We are currently: OPEN";
         }

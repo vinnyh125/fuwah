@@ -9,6 +9,7 @@ I have no experience in UI/UX design so... no idea about the user interface. I j
 
 # Mobile-Compatibility
 Originally, the site was not mobile-friendly whatsoever. The navigation bar at the top of the site would line-break and cover up text, and the whole deal was problematic and annoying. To combat this issue, I used media queries to change the navigation bar's appearance on devices whose width was smaller than 768 px. I'm quite happy with how it looks on mobile!
+![Alt Text](https://i.gyazo.com/16a6d0afc06c021d81125e161946623c.gif)
 
 # Outcome
 Overall, this project has been incredibly informative and helpful in aiding me through standard web-design and web-development practices. Take a look for yourself! (visit: www.fuwahgarden.com)
